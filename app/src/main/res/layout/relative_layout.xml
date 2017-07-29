@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Email"
+        android:gravity="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:id="@+id/tvEmail"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="46dp" />
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Password"
+        android:gravity="center"
+        android:id="@+id/tvPass"
+        android:layout_below="@+id/tvEmail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="52dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:hint="Email"
+        android:gravity="center"
+        android:id="@+id/etEmail"
+        android:layout_above="@+id/tvPass"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Password"
+        android:id="@+id/etPass"
+        android:layout_alignBottom="@+id/tvPass"
+        android:layout_alignLeft="@+id/etEmail"
+        android:layout_alignStart="@+id/etEmail" />
+
+    <!--<ImageButton-->
+    <!--android:layout_width="110dp"-->
+    <!--android:layout_height="60dp"-->
+    <!--android:src="@drawable/button"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_toRightOf="@+id/tvPass"-->
+    <!--android:layout_toEndOf="@+id/tvPass"/>-->
+
+    <ImageButton
+        android:id="@+id/login"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="Log In "
+        android:src="@drawable/button"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:id="@+id/myImageViewText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/login"
+        android:layout_alignTop="@+id/login"
+        android:layout_alignRight="@+id/login"
+        android:layout_alignBottom="@+id/login"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:text="Log In"
+        android:textColor="#000000" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/etPass"
+        android:layout_alignEnd="@+id/etPass"
+        android:layout_below="@id/login">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:paddingTop="10dp">
+
+
+            <ImageButton
+                android:id="@+id/fb"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:scaleType="fitXY"
+                android:text="Log In "
+                android:background="@null"
+                android:src="@drawable/facebook"
+                android:layout_weight="1"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageButton
+                android:id="@+id/google"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:text="Log In "
+                android:background="@null"
+                android:src="@drawable/google"
+                android:layout_weight="1"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+            <ImageButton
+                android:id="@+id/twitter"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:scaleType="fitXY"
+                android:text="Log In "
+                android:background="@null"
+                android:src="@drawable/twitter"
+                android:layout_weight="1"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sign In"
+        android:fontFamily="cursive"
+        android:textSize="30dp"
+        android:id="@+id/textView"
+        android:layout_above="@+id/etEmail"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
